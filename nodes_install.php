@@ -3,7 +3,6 @@
 /**
  * @architecture Nodes Installation  SCRIPTS
  * @version      1.0.1
- * @author       Rahouni Mohammed
  * @copyright    Copyright (c) 2017.
  * 
  */
@@ -21,12 +20,11 @@ define('SSH_CONN'   ,'sudo ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyC
 
 function get_connection_Db() 
 {
-    $host   = '88.198.221.55';
+    $host   = '192.168.100.55';
     $port   = '5432';
-    $dbname = 'emdportal';
-    $user   = 'developer';
-    $pass   = '^SKgG5K8ZF3H8CC';
-    //$pass   = '71f0b2e88f35a884744b070b202bad3a';
+    $dbname = 'DEVDB';
+    $user   = 'advisor';
+    $pass   = '^jjlll87676';
 
     $connection = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $pass);
     return $connection;
