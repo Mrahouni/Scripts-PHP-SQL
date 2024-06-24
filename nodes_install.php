@@ -20,7 +20,7 @@ define('SSH_CONN'   ,'sudo ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyC
 
 function get_connection_Db() 
 {
-    $host   = '192.168.100.55';
+    $host   = '111.111.111.111';
     $port   = '5432';
     $dbname = 'DEVDB';
     $user   = 'advisor';
